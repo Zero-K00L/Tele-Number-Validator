@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>Telephone Number Validator</title>
     </head>
 
@@ -10,20 +11,29 @@
         <main id="main">
             <h1 id="main-title">Telephone Number Validator</h1>
             <div id="main-app">
+                <div id="camera-container">
+                    <div id="camera-icon"></div>
+                </div>
+                
                 <div id="app-container">
                     <p id="app-title">Enter a phone number:</p>
-                    <input id="user-input" type="number">
+                    <div id="input-container">
+                        <input id="user-input" type="number">
+                    </div>
+                    
                     <div id="results-div">
                         <ul id="results-list">
-                            <li class="results-item"></li>
+                            <li class="results-item invalid">Invalid US number:</li>
+                            <li class="results-item valid">Valid US number: </li>
                         </ul>
                     </div>
                 </div>
-                <div id="button container">
-                    <button id="check-btn" type="button">Check</button>
-                    <button id="clear-btn">Clear</button>
+                <div id="button-container">
+                    <button id="check-btn" class="button" type="button">Check</button>
+                    <button id="clear-btn" class="button" type="button">Clear</button>
                 </div>
             </div>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>
